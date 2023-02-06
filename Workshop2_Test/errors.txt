@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 41: expected statement.
-    "Oui mais moins bien":
-                         ^
-
-File "game/script.rpy", line 44: expected statement.
-    "Non mais moins bien":
-                         ^
-
-File "game/script.rpy", line 47: expected statement.
-    ". . . mais moins bien":
-                           ^
+File "game/script.rpy", line 126: expected statement.
+    qte_counter += 1
+                ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Feb  6 11:16:54 2023
+Mon Feb  6 18:35:03 2023
