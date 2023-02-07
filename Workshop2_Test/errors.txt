@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 126: expected statement.
-    qte_counter += 1
-                ^
+File "game/script.rpy", line 42: 'size' is not a keyword argument or valid child for the screen statement.
+    size (100,100)
+        ^
+
+File "game/script.rpy", line 51: 'size' is not a keyword argument or valid child for the screen statement.
+    size (100,100)
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Feb  6 18:35:03 2023
+Tue Feb  7 10:13:37 2023

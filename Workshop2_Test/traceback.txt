@@ -1,28 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 127, in script
-    if cont == 1 and qte_setup < 4:
-  File "game/script.rpy", line 127, in <module>
-    if cont == 1 and qte_setup < 4:
-NameError: name 'qte_setup' is not defined
+After initialization, but before game start.
+  File "game/script.rpy", line 41, in prepare_screen
+    screen baton:
+  File "game/script.rpy", line 41, in prepare
+    screen baton:
+  File "game/script.rpy", line 43, in prepare
+    imagebutton:
+  File "game/script.rpy", line 43, in prepare
+    imagebutton:
+SyntaxError: invalid syntax (game/script.rpy, line 47)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 127, in script
-    if cont == 1 and qte_setup < 4:
-  File "C:\Users\Riallot\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 2115, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Riallot\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Riallot\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 127, in <module>
-    if cont == 1 and qte_setup < 4:
-NameError: name 'qte_setup' is not defined
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 95, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\display\screen.py", line 976, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/script.rpy", line 41, in prepare_screen
+    screen baton:
+  File "game/script.rpy", line 41, in prepare
+    screen baton:
+  File "game/script.rpy", line 43, in prepare
+    imagebutton:
+  File "game/script.rpy", line 43, in prepare
+    imagebutton:
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\py3analysis.py", line 790, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\py3analysis.py", line 772, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1027, in py_compile
+    raise e
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 979, in py_compile
+    raise orig_e
+  File "C:\Users\a.riallot\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 972, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/script.rpy, line 47)
 
-Windows-10-10.0.22000 AMD64
+Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 Workshop2_Test 1.0
-Mon Feb  6 18:42:53 2023
+Tue Feb  7 10:07:16 2023
